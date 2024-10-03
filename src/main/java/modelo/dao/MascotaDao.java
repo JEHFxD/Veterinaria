@@ -21,7 +21,7 @@ public class MascotaDao {
         try {
             Statement consulta = miConexion.getConnection().createStatement();
             consulta.executeUpdate("INSERT INTO mascotas (propietario, nombre, raza, sexo) VALUES (\""+propietario+"\", \""+nombre+"\", \""+raza+"\", \""+sexo+"\")");
-            JOptionPane.showMessageDialog(null, "Se ha registrado a "+nombre);
+            JOptionPane.showMessageDialog(null, "Se ha registrado a "+nombre " de forma exitosa");
             consulta.close();
             miConexion.desconectar();
             return true;
@@ -43,7 +43,7 @@ public class MascotaDao {
             boolean hay = false;
             while(res.next()){
                 hay = true;
-                String propietario = "No tiene dueño";
+                String propietario = "La mascota registrada NO tiene dueño";
                 PersonaVo propietarioData = coordinador.consultarPersona(res.getString("propietario"), false);
                 if (propietarioData != null) {
                     propietario = propietarioData.getNombre();
@@ -115,7 +115,7 @@ public class MascotaDao {
         try {
             Statement consulta = miConexion.getConnection().createStatement();
             consulta.executeUpdate("UPDATE mascotas SET nombre=\""+nombre+"\", propietario=\""+propietario+"\", raza=\""+raza+"\", sexo=\""+sexo+"\" WHERE propietario=\""+propietario+"\" AND nombre=\""+nombre+"\"");
-            JOptionPane.showMessageDialog(null, "Se ha actualizado a "+nombre);
+            JOptionPane.showMessageDialog(null, "Se ha actualizado a "+nombre " de forma exitosa");
             consulta.close();
             miConexion.desconectar();
         } catch (SQLException e) {
