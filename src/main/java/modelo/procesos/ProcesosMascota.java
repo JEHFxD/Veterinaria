@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 import java.util.ArrayList;
 
-import modelo.dao.*;
+import DAO.*;
 import modelo.vo.MascotaVo;
 
 public class ProcesosMascota extends ProcesosGenerales {

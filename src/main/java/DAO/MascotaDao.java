@@ -1,4 +1,4 @@
-package modelo.dao;
+package DAO;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -21,7 +21,7 @@ public class MascotaDao {
         try {
             Statement consulta = miConexion.getConnection().createStatement();
             consulta.executeUpdate("INSERT INTO mascotas (propietario, nombre, raza, sexo) VALUES (\""+propietario+"\", \""+nombre+"\", \""+raza+"\", \""+sexo+"\")");
-            JOptionPane.showMessageDialog(null, "Se ha registrado a "+nombre " de forma exitosa");
+            JOptionPane.showMessageDialog(null, "Se ha registrado a "+nombre+" de forma exitosa");
             consulta.close();
             miConexion.desconectar();
             return true;
@@ -115,7 +115,7 @@ public class MascotaDao {
         try {
             Statement consulta = miConexion.getConnection().createStatement();
             consulta.executeUpdate("UPDATE mascotas SET nombre=\""+nombre+"\", propietario=\""+propietario+"\", raza=\""+raza+"\", sexo=\""+sexo+"\" WHERE propietario=\""+propietario+"\" AND nombre=\""+nombre+"\"");
-            JOptionPane.showMessageDialog(null, "Se ha actualizado a "+nombre " de forma exitosa");
+            JOptionPane.showMessageDialog(null, "Se ha actualizado a "+nombre+" de forma exitosa");
             consulta.close();
             miConexion.desconectar();
         } catch (SQLException e) {
