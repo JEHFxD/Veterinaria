@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 import controlador.Coordinador;
 
 import modelo.Conexion;
-import modelo.vo.MascotaVo;
+import VO.MascotaVo;
 import modelo.vo.PersonaVo;
 
 public class MascotaDao {

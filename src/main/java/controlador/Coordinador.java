@@ -1,7 +1,7 @@
 package controlador;
 
+import VO.MascotaVo;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import modelo.procesos.*;
 import modelo.vo.*;
@@ -86,6 +86,6 @@ public class Coordinador {
     }
     
     public MascotaVo consultarMascota (String idPropietario, String nombre) {
-        return this.misProcesosMascota.consultar(idPropietario, nombre);
+        return (MascotaVo) this.misProcesosMascota.consultar(idPropietario, nombre);
     }
 }

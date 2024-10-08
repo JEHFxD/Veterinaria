@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 import java.util.ArrayList;
 
 import DAO.*;
-import modelo.vo.MascotaVo;
+import VO.MascotaVo;
 
 public class ProcesosMascota extends ProcesosGenerales {
     public boolean registrar (String propietario, String nombre, String raza, String sexo) {

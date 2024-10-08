@@ -1,5 +1,6 @@
 package vista;
 
+import VO.MascotaVo;
 import controlador.Coordinador;
 import modelo.vo.*;
 
@@ -191,4 +192,6 @@ public class VentanaGestionarMascotas extends JFrame implements ActionListener {
             mostrar(txtDuenoID.getText(), txtNombre.getText());
         }
     }
+
+   
 }

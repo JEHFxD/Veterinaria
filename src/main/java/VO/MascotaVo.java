@@ -1,4 +1,4 @@
-package modelo.vo;
+package VO;
 
 public class MascotaVo extends AnimalVo {
     private String nombre;
