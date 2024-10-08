@@ -4,9 +4,6 @@ import controlador.Coordinador;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.Font;
 
 import javax.swing.SwingConstants;
 import javax.swing.JFrame;
@@ -15,7 +12,6 @@ import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
 
-import java.awt.GridBagLayout;
 
 public class VentanaPrincipal extends JFrame implements ActionListener {
     Coordinador miCoordinador;
