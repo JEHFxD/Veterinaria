@@ -1,12 +1,11 @@
 package modelo.procesos;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import javax.swing.JOptionPane;
 
-import modelo.dao.*;
-import modelo.vo.*;
+import DAO.*;
+import VO.PersonaVo;
 
 public class ProcesosPersona extends ProcesosGenerales {
     public boolean registrar (String documento, String nombre, String telefono) {

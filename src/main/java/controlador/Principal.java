@@ -1,9 +1,6 @@
 package controlador;
 
 import vista.*;
-import modelo.vo.*;
-import modelo.dao.*;
-import modelo.*;
 import modelo.procesos.*;
 import controlador.Coordinador;
 

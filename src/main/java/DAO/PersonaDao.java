@@ -1,17 +1,16 @@
-package modelo.dao;
+package DAO;
 
+import VO.PersonaVo;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import java.util.HashMap;
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
 import modelo.Conexion;
-import modelo.vo.PersonaVo;
 
 public class PersonaDao {
     public boolean registrar (String documento, String telefono, String nombre) {

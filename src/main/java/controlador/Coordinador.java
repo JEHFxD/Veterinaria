@@ -1,14 +1,13 @@
 package controlador;
 
 import VO.MascotaVo;
+import VO.PersonaVo;
 import java.util.ArrayList;
 
 import modelo.procesos.*;
-import modelo.vo.*;
 import vista.*;
 
 public class Coordinador {
-    private VentanaPrincipal miVentanaPrincipal;
     private VentanaGestionarMascotas miVentanaGestionarMascotas;
     private VentanaGestionarPersonas miVentanaGestionarPersonas;
     private ProcesosMascota misProcesosMascota;
@@ -23,7 +22,6 @@ public class Coordinador {
     }
     
     public void setVentanaPrincipal(VentanaPrincipal ventanaPrincipal) {
-        this.miVentanaPrincipal = ventanaPrincipal;
     }
     
     public void setVentanaGestionarMascotas(VentanaGestionarMascotas ventanaGestionarMascotas) {
@@ -78,11 +76,11 @@ public class Coordinador {
     }
     
     public PersonaVo consultarPersona(String documento) {
-        return this.misProcesosPersona.consultar(documento);
+        return (PersonaVo) this.misProcesosPersona.consultar(documento);
     }
     
     public PersonaVo consultarPersona(String documento, boolean mensaje) {
-        return this.misProcesosPersona.consultar(documento, mensaje);
+        return (PersonaVo) this.misProcesosPersona.consultar(documento, mensaje);
     }
     
     public MascotaVo consultarMascota (String idPropietario, String nombre) {

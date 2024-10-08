@@ -13,7 +13,7 @@ import controlador.Coordinador;
 
 import modelo.Conexion;
 import VO.MascotaVo;
-import modelo.vo.PersonaVo;
+import VO.PersonaVo;
 
 public class MascotaDao {
     public boolean registrar (String propietario, String nombre, String raza, String sexo) {
@@ -44,7 +44,7 @@ public class MascotaDao {
             while(res.next()){
                 hay = true;
                 String propietario = "La mascota registrada NO tiene dueño";
-                PersonaVo propietarioData = coordinador.consultarPersona(res.getString("propietario"), false);
+                PersonaVo propietarioData = (PersonaVo) coordinador.consultarPersona(res.getString("propietario"), false);
                 if (propietarioData != null) {
                     propietario = propietarioData.getNombre();
                 }

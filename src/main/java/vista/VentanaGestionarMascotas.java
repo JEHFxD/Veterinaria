@@ -1,6 +1,7 @@
 package vista;
 
 import VO.MascotaVo;
+import VO.PersonaVo;
 import controlador.Coordinador;
 
 import java.awt.event.ActionEvent;
@@ -16,7 +17,6 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.JScrollPane;
-import modelo.vo.PersonaVo;
 
 public class VentanaGestionarMascotas extends JFrame implements ActionListener {  
     Coordinador miCoordinador;

@@ -5,10 +5,10 @@ modelo\procesos\ProcesosPersona.class
 controlador\Coordinador.class
 vista\VentanaGestionarPersonas.class
 VO\MascotaVo.class
+DAO\PersonaDao.class
+VO\PersonaVo.class
 modelo\Conexion.class
-modelo\vo\PersonaVo.class
 VO\AnimalVo.class
-modelo\dao\PersonaDao.class
 vista\VentanaPrincipal.class
 DAO\MascotaDao.class
 modelo\procesos\ProcesosMascota.class
